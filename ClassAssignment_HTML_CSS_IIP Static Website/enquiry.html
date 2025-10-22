@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Enquiry Page</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="main">
+  <div class="row1">
+   <div class="row1c1">
+    <img src="images/logo.png" alt="" width="210px" height="160px">
+   </div>
+   <div class="row1c2">
+    <h3>LOOKING FOR THE BEST PLACE FOR <br> PROGRAMMING </h3>
+   </div>
+   <div class="row1c3">
+    <h4><a href="www.iipacademy.com" target="_blank">www.iipacademy.com</a> </h4>
+    <h4> <a href="mailto:Info@iipacademy.com">Info@iipacademy.com</a> </h4>
+    <h4> <a href="tel:+91 9269698122">+91 9269698122</a> </h4>
+   </div>
+  </div>
+  <div class="row2">
+   <div class="menuItems"> <a href="home.html">Home</a></div>
+   <div class="menuItems"> <a href="aboutUs.html">About Us</a> </div>
+   <div class="menuItems"> <a href="courses.html">Courses</a> </div>
+   <div class="menuItems"><a href="gallery.html">Gallery</a> </div>
+   <div class="menuItems"> <a href="enquiry.html">Enquiry</a> </div>
+   <div class="menuItems"><a href="contactUs.html">Contact Us</a> </div>
+  </div>
+  <div class="row3">
+   <div class="row3LeftAboutPage">
+    <div class="leftMenu">Home</div>
+    <div class="leftMenu">About Us</div>
+    <div class="leftMenu">Courses</div>
+    <div class="leftMenu">Gallery</div>
+    <div class="leftMenu">Enquiry</div>
+    <div class="leftMenu">Contact Us</div>
+   </div>
+
+
+   <div class="row3RightEnquiryPage">
+    <h2>Enquiry</h2>
+    <form class="form-container">
+     <div class="form-row">
+      <label for="">Gender:</label>
+      <div class="gender-options">
+       <input type="radio" name="gender" value="Male"> Male
+       <input type="radio" name="gender" value="Female"> Female
+      </div>
+     </div>
+
+     <div class="form-row">
+      <label for="">Name:</label>
+      <input type="text" name="name" required>
+     </div>
+
+     <div class="form-row">
+      <label for="contact">Contact No:</label>
+      <input type="number" name="contact">
+     </div>
+
+     <div class="form-row">
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+       <option value="India">India</option>
+       <option value="United States">United States</option>
+       <option value="Australia">Australia</option>
+       <option value="Russia">Russia</option>
+       <option value="Canada">Canada</option>
+       <option value="United Kingdom">United Kingdom</option>
+       <option value="Germany">Germany</option>
+      </select>
+     </div>
+
+     <div class="form-row">
+      <label for="states">State:</label>
+      <select name="states" id="states">
+       <option value="Karnataka">Karnataka</option>
+       <option value="Andhra Pradesh">Andhra Pradesh</option>
+       <option value="Telangana">Telangana</option>
+       <option value="Tamil Nadu">Tamil Nadu</option>
+       <option value="Kerala">Kerala</option>
+       <option value="Maharashtra">Maharashtra</option>
+       <option value="Gujarat">Gujarat</option>
+      </select>
+     </div>
+
+     <div class="form-row">
+      <label for="city">City:</label>
+      <select name="city" id="city">
+       <option value="Bengaluru">Bengaluru</option>
+       <option value="Mumbai">Mumbai</option>
+       <option value="Hyderabad">Hyderabad</option>
+       <option value="Chennai">Chennai</option>
+       <option value="Visakhapatnam">Visakhapatnam</option>
+      </select>
+     </div>
+
+     <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+     </div>
+
+     <div class="form-row">
+      <label for="address">Address:</label>
+      <textarea name="address" id="address"></textarea>
+     </div>
+
+     <div class="form-row">
+      <label for="enquiry">Enquiry:</label>
+      <textarea name="enquiry" id="enquiry"></textarea>
+     </div>
+     <button class="btn" >Send</button>
+    </form>
+
+    <!-- <form>
+         <label class="gender" for="">Gender:</label>
+           <input type="radio" name="gender" value="Male">Male 
+           <input type="radio" name="gender" value="Female">Female
+         
+         <br><br>
+         <label class="name" for="">Name:  </label>
+          <input  type="text" name="name" required>
+       
+         <br><br>
+         <label class="contact" for="contact">Contact No:</label>
+          <input type="number" name="Contact No">
+         
+         <br><br>
+        <label for="country" >Country:</label>
+          <select name="country" id="country">
+           <option value="">--Select a Country--</option> -->
+    <!-- <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="Australia">Australia</option>
+                <option value="Russia">Russia</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+          </select>
+         <br><br>
+         <label for="states" >States:</label>
+         <select name="states" id="states">
+          <option value="Karnataka">Karnataka</option>
+          <option value="Andra Pradesh">Andra Pradesh</option>
+          <option value="Telengana">Telengana</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Maharastra">Maharastra</option>
+          <option value="Gujarath">Gujarath</option>
+         </select>
+         <br><br>
+         <label for="city">City:</label>
+          <select name="city" id="city">
+           <option value="Bengaluru">Bengaluru</option>
+           <option value="Mumbai">Mumbai</option>
+           <option value="Hyderabad">Hyderabad</option>
+           <option value="channai">channai</option>
+           <option value="viashakapattanam"></option>
+          </select>
+          <br><br>
+           <label for="email">Email:</label>
+           <input type="email" name="email" required>
+          <br><br>
+          <label for="address">Address:</label>
+          <br><br>
+          <textarea name="address" id="address"></textarea>
+          <br><br>
+          <label for="enquiry">Enquiry:</label>
+          <br><br>
+          <textarea name="enquiry" id="enquiry"></textarea>
+          <br><br>
+       </form> -->
+   </div>
+  </div>
+  <div class="row5AboutPage">
+   <div class="row5LeftAboutPage"></div>
+   <div class="row5MiddleAboutPage">
+    <div class="footerMenuAboutPage">Home | About Us | Courses | Gallery | Enquiry | Contact Us </div>
+   </div>
+   <div class="row5RightAboutPage"></div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: Arial;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+body{
+ background-color: black;
+}
+.main{
+ width: 1000px;
+ margin: auto;
+
+}
+.row1{
+width: 1000px;
+height: 186px;
+background: url("images/headerbg.jpg");
+display: flex;
+}
+.row1c1{
+width: 210px;
+height: 176px;
+margin-left: 15px;
+margin-top: 10px;
+
+}
+.row2{
+ width: 400px;
+height: 186px;
+
+}
+.row1c2{
+ width: 390px;
+ height: 136;
+text-align: center;
+margin-top: 50px;
+padding-left: 10px;
+}
+.row3{
+ width: 375px;
+height: 186px;
+margin-left: 20px;
+
+}
+.row1c3{
+ width: 296px;
+ height: 132px;
+ margin: 30px;
+ padding-left: 20px;
+ padding-top: 10px;
+ background: url("images/topcontactbg.png") no-repeat;
+}
+.row1c3 h4{
+margin-bottom: 10px;
+letter-spacing: 1px;
+padding-left: 10px;
+}
+.row2{
+ width: 1000px;
+ height: 55px;
+ display: flex;
+ justify-content: center;
+ background: url("images/menubg.jpg") repeat-x;
+}
+.menuItems{
+ width:127px ;
+ height: 44px;
+ text-align: center;
+ align-content: center;
+ margin-top: 9px;
+ box-sizing: border-box;
+ margin-right: 12px;
+ background: url("images/menubackground.png") no-repeat;
+}
+.menuItems a{
+ color: black;
+}
+.row3{
+ width: 1000px;
+ height: 240px;
+ box-sizing: border-box;
+ display: flex;
+ margin:10px auto;
+
+}
+.row3Left{
+ width: 213px;
+ height: 240px;
+ margin-left: 10px;
+}
+
+.leftMenu{
+  width: 213px;
+  height: 40px;
+  background: url("images/leftmenubg.png") no-repeat;
+  padding-top: 10px;
+  text-align: center;
+}
+.row3Right{
+ width: 743px;
+ height: 240px;
+ margin-left: 15px;
+}
+.row4{
+  width: 1000px;
+  height: 195px;
+  display: flex;
+  margin:10px auto;
+}
+.row4C1{
+  width: 230px;
+  height: 195px;
+  background: url("images/whybg.jpg");
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #fff;
+  text-align: left;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.row4C2{
+  width: 380px;
+  height: 195px;
+  background-color: orange;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.row4C3{
+  width: 380px;
+  height: 195px;
+  margin-right: 20px;
+}
+ol{
+  margin-left: 30px;
+}
+h4{
+  margin: 10px;
+  text-align: center;
+}
+.row4C2 > p{
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.row4C2 .course{
+  color: black;
+  font-size: 12px;
+}
+.row5{
+  width: 1000px;
+  height: 48px;
+display: flex;
+margin: auto;
+margin-bottom: 200px;
+margin-left: 10px;
+}
+.row5Left{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_left.png")no-repeat;
+}
+.row5Middle{
+  width: 975px;
+  height: 48px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background: url("images/footer_middle.png");
+}
+ .row5Right{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_right.png") no-repeat;
+  align-items: end;
+  margin-right: 30px;
+  }
+.footerMenu{
+ height: 47px;
+ text-align: center;
+ align-content: center;
+ background: url("images/footermenubg.jpg") no-repeat;
+}
+
+/* AboutUs Page */
+.row3RightAboutPage{
+  width: 743px;
+  height: 580px;
+  margin-left: 20px;
+  background-color:#fff;
+}
+.row3RightAboutPage h1{
+padding: 30px;
+}
+.row3RightAboutPage p{
+  margin-left: 30px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.row3RightAboutPage > h4{
+text-align: left;
+margin-left: 30px;
+}
+.row3RightAboutPage > ol{
+  margin-left: 40px;
+}
+.row3RightAboutPage > ol> li{
+  margin-bottom: 5px;
+}
+
+.row5AboutPage{
+  width: 1000px;
+  height: 48px;
+display: flex;
+margin: auto;
+margin-top: 350px;
+margin-bottom: 50px;
+margin-left: 10px;
+}
+.row5LeftAboutPage{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_left.png")no-repeat;
+}
+.row5MiddleAboutPage{
+  width: 975px;
+  height: 48px;
+  display: flex;
+  margin: auto;
+  padding-top: 15px;
+  justify-content: center;
+  background: url("images/footer_middle.png");
+}
+ .row5RightAboutPage{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_right.png") no-repeat;
+  align-items: end;
+  margin-right: 20px;
+  }
+.footerMenu{
+ height: 47px;
+ text-align: center;
+ align-content: center;
+ background: url("images/footermenubg.jpg") no-repeat;
+}
+
+/* CoursePage */
+.row3RightCoursePage > h1{
+  padding: 10px;
+}
+.row3RightCoursePage{
+  width: 745px;
+  height: 240px;
+  margin-left: 20px;
+  background-color:#fff;
+}
+.row3RightCoursePage > ol{
+  margin-left: 40px;
+}
+.row3RightCoursePage > ol> li{
+  margin-bottom: 5px;
+}
+
+.row5CoursePage{
+  width: 1000px;
+  height: 48px;
+display: flex;
+margin: auto;
+margin-bottom: 50px;
+margin-left: 10px;
+}
+.row5LeftCoursePage{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_left.png")no-repeat;
+}
+.row5MiddleCoursePage{
+  width: 975px;
+  height: 48px;
+  display: flex;
+  margin: auto;
+  padding-top: 15px;
+  justify-content: center;
+  background: url("images/footer_middle.png");
+}
+ .row5RightCoursePage{
+  width: 13px;
+  height: 48px;
+  background: url("images/footer_right.png") no-repeat;
+  align-items: end;
+  margin-right: 25px;
+  }
+.footerMenu{
+ height: 47px;
+ text-align: center;
+ align-content: center;
+ background: url("images/footermenubg.jpg") no-repeat;
+}
+
+
+/* GalleryPage */
+
+.row3RightGalleryPage{
+  width: 743px;
+  height: 580px;
+   margin: 0 auto;            /* ✅ centers the entire gallery horizontally */
+  background-color: #fff;
+  text-align: center;        /* ✅ centers the heading & contents inside */
+}
+
+.row3RightGalleryPage >h1 {
+  /* text-align: left; */   /* optional */
+  /* margin-left: 20px;*/   /* small left indent */
+  margin-top: 10px;
+}
+.imgdiv{
+  width: 100%;
+  height: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px; /* real 20px visible gap */
+  box-sizing: border-box;
+}
+.imgdiv img{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Enquiry Page */
+.row3RightEnquiryPage{
+    width: 743px;
+  height: 580px;
+   margin: 0 auto;            /* ✅ centers the entire gallery horizontally */
+  background-color: #fff;
+  text-align: left;        /* ✅ align left_ heading & contents inside */
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.row3RightEnquiryPage h2{
+    /* text-align: left; */   /* optional */
+  /* margin-left: 20px;*/   /* small left indent */
+  margin-bottom: 30px;
+}
+/* .form-container{
+  
+} */
+
+
+.form-container {
+  width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  width: 120px; /* same width for all labels for alignment */
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.btn{
+  background-color: lightblue;
+  padding: 12px;
+  border-radius: 5px;
+  color: black;
+}
+
+/* Contact Page */
+
+.row3RightContactPage{
+ width: 745px;
+  height: 240px;
+  margin-left: 20px;
+  background-color:#fff;
+
+}
+.row3RightContactPage > h1{
+  padding: 10px;
+}
+.row3RightContactPage > ol> li{
+    list-style-type: none;
+}
+.row3RightContactPage > ol> li span{
+  font-weight: bold;
+}
