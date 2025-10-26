@@ -1,0 +1,355 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: Arial, Helvetica, sans-serif;
+ list-style: none;
+ box-sizing: border-box;
+ text-decoration: none;
+
+}
+html {
+ scroll-behavior: smooth;
+ scroll-padding-top: 100px; /* Adjust a little more than header height */
+}
+
+/* Header Section */
+header{
+ width: 100%;
+ height: 80px;
+ box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 9999;
+ background: #fff;
+}
+.headerMid{
+ width: 1320px;
+ display: flex;
+ margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.logodiv a img {
+ width: 130px;
+ height: 50px;
+}
+nav ul {
+display: flex;
+gap: 20px;
+}
+nav ul li a{
+ font-size: 20px;
+ font-weight: normal;
+ color:#000000;
+}
+
+/* Banner Section */
+
+.bannerSec{
+ width: 100%;
+ height: 100vh;    /* Full screen height */
+ background-image: url("images/the-town-bg-01.jpg");
+ background-size: cover;   /* Make it fill nicely */
+ background-position: center;  /* Center the image */
+ display: flex;
+ margin: auto;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 80px;
+}
+
+.fa-circle-chevron-down{
+ color: white;
+ font-size: 80px;
+}
+.bannerSec h1{
+ color: white;
+ font-size: 45px;
+ text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+/* Introduction Section */
+.intro-sec{
+ width: 100%;
+ margin-top: 50px;
+}
+.intro-mid{
+width: 1320px;
+ margin: auto;
+ padding: 40px 20px;
+}
+
+/* row1 */
+
+.intro-mid_row1{
+ width: 100%;
+ display: flex;
+ margin: auto;
+ padding-bottom: 30px;
+ justify-content: space-between;
+}
+.img-div{
+ flex-basis: 45%;
+}
+.intro-items{
+ flex-basis: 45%;
+}
+.intro-items h2{
+color: #3496d8;
+font-size: 45px;
+padding-bottom: 35px;
+}
+.intro-items p{
+color: #8f8f8f;
+font-size: 22px;
+padding-bottom: 30px;
+line-height: 30px;
+}
+button{
+ color: white;
+font-size: 20px;
+padding: 13px 40px;
+border: none;
+border-radius: 25px;
+background: #3496d8;
+}
+
+/* row2 */
+
+.intro-mid_row2{
+ width: 100%;
+ display: flex;
+ margin: auto;
+ justify-content: space-between;
+
+}
+
+/* row2-c1 */
+.intro-mid_row2-c1{
+ width: 30%;
+ text-align: center;
+}
+.intro-mid_row2-c1 i{
+ color: #3496d8;
+ font-size: 60px;
+ padding: 35px 0px;
+}
+.intro-mid_row2-c1 h3{
+ color: #3496d8;
+ font-size: 25px;
+padding-bottom: 35px;
+}
+.intro-mid_row2-c1 p{
+ color: #8f8f8f;
+ font-size: 19px;
+text-align: center;
+font-weight: normal;
+line-height: 30px;
+}
+
+/* row2-c2 */
+
+.intro-mid_row2-c2{
+ width: 30%;
+ text-align: center;
+}
+.intro-mid_row2-c2 i{
+ color: #3496d8;
+ font-size: 60px;
+ padding: 35px 0px;
+}
+.intro-mid_row2-c2 h3{
+ color: #3496d8;
+ font-size: 25px;
+padding-bottom: 35px;
+}
+.intro-mid_row2-c2 p{
+ color: #8f8f8f;
+ font-size: 19px;
+text-align: center;
+font-weight: normal;
+line-height: 30px;
+}
+
+/* row2-c3 */
+.intro-mid_row2-c3{
+ width: 30%;
+ text-align: center;
+}
+.intro-mid_row2-c3 i{
+ color: #3496d8;
+ font-size: 60px;
+ padding: 35px 0px;
+}
+.intro-mid_row2-c3 h3{
+ color: #3496d8;
+ font-size: 25px;
+padding-bottom: 35px;
+}
+.intro-mid_row2-c3 p{
+ color: #8f8f8f;
+ font-size: 19px;
+text-align: center;
+font-weight: normal;
+line-height: 30px;
+}
+
+/* Our work page */
+
+.our-workSec{
+ width: 100%;
+ margin-top: 50px;
+}
+.our-workMid{
+ width: 1320px;
+ display: flex;
+ text-align: center;
+ flex-direction: column;
+ margin: auto;
+ 
+}
+.our-workMid h1{
+ font-size: 45px;
+ color: #3496d8;
+ font-weight: normal;
+ padding-bottom: 35px;
+
+}
+.our-workMid p{
+ font-size: 17px;
+ color: #8f8f8f;
+ font-weight: normal;
+margin-bottom: 65px;
+
+}
+.galleryDiv{
+ width: 100%;
+}
+.galleryDivMid{
+ width: 1320px;
+ display: flex;
+ margin: auto;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ align-items: center;
+}
+.galleryDivMid img{
+ width: 18%;
+}
+
+
+/* Contact Us */
+
+ .contactUsSec{
+ width: 100%;
+ height: 100vh;
+ margin-top: 50px;
+ background-image: url("images/the-town-bg-02.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.contactUsSecMid{
+ width: 1320px;
+display: flex;
+margin: auto;
+flex-direction: column;
+}
+.contactUsSecMid h1{
+ color: white;
+ font-size: 55px;
+ font-weight: bold;
+ padding-top: 120px;
+}
+.contactUsSecMid > hr{
+ width: 250px;
+ border-bottom: 10px solid white;
+}
+.contactUsSecMid span hr{
+ width: 900px;
+}
+.contactUsSecMid p{
+ color: white;
+ font-size: 19px;
+ font-weight: normal;
+margin: 30px 0px;
+line-height: 35px;
+}
+
+/* Media Section */
+
+.mediaDiv{
+ width: 1320px;
+ display: flex;
+ margin: auto;
+ flex-direction: column;
+
+}
+.mediaDivRow1{
+ width: 100%;
+ display: flex;
+ margin: auto;
+ justify-content: space-between;
+ margin-bottom: 80px;
+}
+.mediaDivRow1C1{
+ flex-basis: 60%;
+ text-align: left;
+}
+.mediaDivRow1C1 i{
+color: white;
+font-size: 40px;
+font-weight: 900px;
+}
+.mediaDivRow1C1 > span{
+ color: white;
+ font-size: 16px;
+}
+.mediaDivRow1C2{
+ flex-basis: 60%;
+ text-align: left;
+}
+.mediaDivRow2{
+ width: 100%;
+ display: flex;
+ margin: auto;
+ justify-content: space-between;
+ margin-bottom: 80px;
+}
+.mediaDivRow1C2 i{
+color: white;
+font-size: 40px;
+font-weight: 900px;
+}
+.mediaDivRow1C2 > span{
+ color: white;
+ font-size: 16px;
+}
+.btn{
+ font-size: 14px;
+ background:#ced4da;
+ color: black;
+ border: none;
+ border-radius: 6px;
+ padding: 12px 30px;
+}
+.mediaDivRow1C2 input{
+ padding: 12px 45px;
+ border-radius: 6px;
+ background: transparent;
+ border: 1px solid white;
+ color: white;
+}
+
+/* footer */
+.footer{
+ width: 1320px;
+ display: flex;
+ margin: auto;justify-content: center;
+}
+.footer p{
+ color:white;
+ margin-top: 100px;
+}
