@@ -342,6 +342,10 @@ font-weight: 900px;
  border: 1px solid white;
  color: white;
 }
+.mediaDivRow1C2 input::placeholder {
+  color: white;
+  opacity: 1; /* Ensures full visibility on some browsers */
+}
 
 /* footer */
 .footer{
@@ -353,3 +357,24 @@ font-weight: 900px;
  color:white;
  margin-top: 100px;
 }
+.mediaDivRow1C1 i.fa-phone-flip:hover{
+color: #3496d8;
+transition: 0.7s;
+}
+.mediaDivRow1C1 span:hover{
+color: #3496d8;
+transition: 0.7s;
+}
+.mediaDivRow1C1 i.fa-envelope:hover{
+color: #3496d8;
+transition: 0.7s;
+}
+.mediaDivRow1C2 i.fa-location-dot:hover{
+color: #3496d8;
+transition: 0.7s;
+}
+.mediaDivRow1C2 span:hover{
+color: #3496d8;
+transition: 0.7s;
+}
+
