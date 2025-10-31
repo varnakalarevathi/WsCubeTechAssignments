@@ -1,0 +1,169 @@
+ /* RESET BASE */
+ *{
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Times New Roman', Times, serif;
+ list-style: none;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+
+/* FORM LAYOUT */
+
+form{
+ width: 90%;
+ max-width: 900px;
+ margin: 40px auto;
+}
+.container{
+ padding: 40px;
+ border-radius: 5px;
+}
+legend{
+ padding: 0px 10px;
+}
+
+/* ROWS */
+
+.row{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 30px;
+ gap: 20px;
+}
+.field{
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+}
+
+/* LABELS & INPUTS */
+
+/* ROW-1 */
+/* USER NAME */
+label{
+ margin-bottom: 5px;
+}
+input[type="text"]{
+ padding: 10px;
+ border-radius: 5px;
+}
+
+/* ROW-2 */
+
+/* EMAIL & MOBILE */
+
+input[type="email"]{
+ padding: 10px;
+ border-radius: 5px;
+}
+input[type="tel"]{
+ padding: 10px;
+ border-radius: 5px;
+}
+
+/* ROW-3 */
+/* DATE & STATE */
+input[type="date"]{
+ padding: 10px;
+ border-radius: 5px;
+}
+select{
+ padding: 10px;
+ border-radius: 5px;
+}
+
+/* ROW-4 */
+/* GENDER */
+
+.fullwidthField{
+ width: 100%;
+ max-width: 900px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;  /* prevent stretch */
+ }
+.genderLabel{
+  margin-bottom: 5px;
+}
+
+.radioGroup{
+  width: 100%; /* fills the entire available row width */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* ROW-5 */
+/* ADDRESS */
+
+.textareaLabel{
+ margin-bottom: 5px;
+}
+.textareadiv textarea{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ border-radius: 5px;
+ padding: 10px 20px;
+}
+form textarea {
+  width: 850px !important;
+  height: 100px;
+  resize: none;
+}
+
+/* ROW-5 */
+/* QUALIFICATION */
+
+.qualifyLabel{
+  margin-bottom: 5px;
+}
+
+
+/* ROW-6 */
+/* UPLOAD IMAGE */
+
+.uploadimgLabel{
+  margin-bottom: 5px;
+}
+.btnDiv {
+  width: 100%;
+  max-width: 900px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  align-content: center;
+  margin-bottom: 25px;
+}
+button:nth-child(1){
+margin-left: 20px !important;
+padding: 5px 10px;
+}
+button:nth-child(2){
+margin-left: 10px !important;
+border: none;
+}
+
+/* SAVE & RESET BUTTONS */
+
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+.buttonDiv button:nth-child(1){
+background-color: #9b59b6;
+color: #fff;
+padding: 10px 20px;
+}
+.buttonDiv button:nth-child(2){
+background-color: #9b59b6;
+color: #fff;
+padding: 10px 20px;
+}
+

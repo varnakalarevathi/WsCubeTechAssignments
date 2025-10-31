@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+    <!-- FORM LAYOUT -->
+    <fieldset class="container">
+      <legend> &nbsp; JOB APPLICATION FORM &nbsp; </legend>
+
+      <!-- ROWS -->
+      <!-- ROW-1 -->
+      <!-- USER NAME  -->
+
+      <div class="row">
+        <div class="field">
+          <label for="fname">FIRST NAME</label>
+          <input type="text" id="fname" placeholder="ENTER YOUR FIRST NAME">
+        </div>
+        <div class="field">
+          <label for="lname">LAST NAME</label>
+          <input type="text" id="lname" placeholder="ENTER YOUR LAST NAME">
+        </div>
+      </div>
+
+      <!-- ROW-2 -->
+      <!-- EMAIL & MOBILE -->
+
+      <div class="row">
+        <div class="field">
+          <label for="email">EMAIL</label>
+          <input type="email" id="emaile" placeholder="xyz@gmail.com">
+        </div>
+        <div class="field">
+          <label for="mobile">MOBILE NUMBER</label>
+          <input type="tel" id="mobile" placeholder="91 97424 12164">
+        </div>
+      </div>
+
+      <!-- ROW-3 -->
+      <!-- DATE & STATE -->
+
+      <div class="row">
+        <div class="field">
+          <label for="dob">DATE OF BIRTH</label>
+          <input type="date" id="date">
+        </div>
+        <div class="field">
+          <label for="state">STATE</label>
+          <select name="state" id="state">
+            <option value="">STATE</option>
+            <option value="">Andhra Pradesh</option>
+            <option value="">Goa</option>
+            <option value="">Haiyana</option>
+            <option value="">Bihar</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ROW-4 -->
+      <!-- GENDER -->
+
+      <div class="row">
+        <div class="fullwidthField">
+          <div class="genderLabel">
+            <label for="gender">GENDER</label>
+          </div>
+          <div class="radioGroup">
+            <label> <input type="radio" name="gender" value="male">MALE</label>
+            <label><input type="radio" name="gender" value="female">FEMALE</label>
+            <label><input type="radio" name="gender" value="other">OTHER</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW-5 -->
+      <!-- ADDRESS -->
+      <div class="row">
+        <div class="fullwidthField">
+          <div class="textareaLabel">
+            <label for="address">ADDRESS</label>
+          </div>
+          <div class="textareadiv">
+            <textarea name="address" id="address" placeholder="ENTER YOUR ADDRESS"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW-5 -->
+      <!-- QUALIFICATION -->
+
+      <div class="row">
+        <div class="fullwidthField">
+          <div class="qualifyLabel">
+            <label for="qualification">QUALIFICATION</label>
+          </div>
+          <div class="radioGroup">
+            <label><input type="radio">10 <sup>TH</sup></label>
+            <label><input type="radio">12 <sup>TH</sup></label>
+            <label><input type="radio">UNDER GRADUATE</label>
+            <label><input type="radio">POST GRADUATE</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW-6 -->
+      <!-- UPLOAD IMAGE -->
+
+      <div class="btnrow">
+        <div class="fullwidthField">
+          <div class="uploadimgLabel">
+            <label for="uploadimg">UPLOAD IMAGE</label>
+          </div>
+          <div class="btnDiv">
+            <button>Choose file</button>
+            <button>No file chosen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAVE & RESET BUTTONS -->
+
+      <div class="buttonDiv">
+        <button>SAVE</button>
+        <button>RESET</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
