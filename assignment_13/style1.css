@@ -1,0 +1,84 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: sans-serif;
+ list-style: none;
+ text-decoration: none;
+ box-sizing: border-box;
+
+}
+section{
+ width: 100%;
+ height: 100%;
+
+}
+.midSec{
+max-width: 1320px;
+ border: 1px solid red;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ padding-left: 12px;
+
+}
+.imgEffectItems{
+ flex-basis: 31%;
+ margin: 1%;
+ position: relative;
+ top: 0px;
+ left: 100px;
+}
+.imgEffectItems img{
+ width: 100%;
+}
+
+.contentDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* Hidden state */
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1.5s ease, visibility 1s;
+}
+/* .contentDiv{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0px;
+ left: 15px;
+
+justify-content: center;
+align-items: center;
+flex-direction: column;
+display: none;
+transition: transform 1s;   
+}  */
+.contentDiv h3{
+ color: white;
+ margin-top: 20px;
+ text-align: center;
+}
+.contentDiv p{
+ color: white;
+ margin-top: 20px;
+}
+.contentDiv button{
+ display: flex;
+margin: auto;
+ padding: 10px; 
+}
+.imgEffectItems:hover .contentDiv {
+  /* Visible state */
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
