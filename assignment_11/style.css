@@ -1,0 +1,238 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ list-style: none;
+ font-family: sans-serif;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+/* HEADER SECTION */
+
+header{
+ width: 100%;
+ height: 90px;
+ box-shadow: 0px 0px 8px #ccc;
+ padding: 10px 0px;
+}
+.headerMid{
+ width: 100%px;
+ display: flex;
+ margin: auto;
+ justify-content: space-around;
+ align-items: center;
+}
+figure img{
+ width: 150px;
+}
+nav{
+ display: flex;
+
+}
+nav button{
+ padding: 8px 12px;
+ margin-left: 20px;
+ border-radius: 5px;
+border: 0.5px solid lightgray;
+color: white;
+ background: rgb(38, 153, 251);
+}
+nav .btnDiv button:nth-child(1){
+ margin-left: 20px;
+ background: white;
+ color: black;
+}
+nav .btnDiv button:nth-child(2){
+ background: rgb(38, 153, 251);
+ color: white;
+}
+
+nav ul{
+ display: flex;
+ margin: auto;
+ gap: 30px;
+}
+nav ul li a{
+ color: black;
+}
+
+
+nav .btnDiv button:nth-child(1):hover{
+ background: rgb(38, 153, 251);
+ color: white;
+}
+
+nav .btnDiv button:nth-child(2):hover{
+  background: white;
+ color: black;
+}
+
+/* BANNER SECTION */
+
+.bannerSec{
+  width: 100%;
+  height: 500px;
+  background-image: url("images/spotlight-bg.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.container1{
+ width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+ text-align: center;
+}
+.containerMain{
+  margin-top: 60px;
+ 
+}
+.containerMain h1{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 9;
+}
+.containerMain p{
+  color: #fff;
+  font-size: 18px;
+}
+.containerMain img{
+  width: 15%;
+  position: absolute;
+  top: 100px;
+  left: 850px;
+  z-index: 1;
+}
+.container2{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+ text-align: center;
+}
+.nav{
+  display: flex;
+  margin: auto;
+}
+.nav ul{
+  margin: 50px;
+
+}
+.verticleLine {
+  border-left: 2px solid rgb(3, 46, 86); /* vertical line */
+  height: 100px; /* line height */
+  margin: 20px; /* spacing around line */
+}
+.nav ul li{
+  color: #fff;
+}
+.nav ul li:nth-child(1){
+  font-size: 48px;
+  font-weight: 700;
+}
+.nav ul li:nth-child(2){
+color:rgb(118, 178, 198);
+font-size: 16px;
+}
+
+/* CONTENT SECTION */
+.contentSec{
+  width: 1320px;
+  height: 120vh;
+  margin-top: 100px;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* LEFT CONTENT */
+.leftContent{
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+.leftContent h1{
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.leftContent p{
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.leftSubHeading1{
+  box-shadow: 0px 0px 5px #ccc;
+  margin-bottom: 20px;
+  /* padding: 25px 0px 0px 25px; */
+ padding: 25px 0px 0px 25px;
+   border: 1px solid transparent; /* So transition works smoothly */
+  /* transition: 0.5s ease; */
+  transition: all 0.5s ease; /* Smooth transition for multiple properties */
+  background: #fff;
+}
+.leftSubHeading1 h4{
+  margin-bottom: 10px;
+}
+.leftSubHeading1 p{
+margin-bottom: 10px;
+color: rgb(91, 86, 86);
+}
+.leftSubHeading1>button{
+margin-bottom: 25px;
+padding: 10px 25px;
+color: rgb(38, 153, 251);
+border: none;
+background: white;
+font-size: 16px;
+}
+
+.btnDiv>button{
+  padding: 15px 30px;
+  background: rgb(38, 153, 251);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.leftSubHeading1:hover{
+  /* border: 1px solid rgb(38, 153, 251) ; */
+   border-color: rgb(38, 153, 251);
+}
+.btnDiv>button:hover{
+  background: #fff;
+  color: rgb(91, 86, 86);
+  border: .5px solid rgb(38, 153, 251) ;
+}
+/* RIGHT CONTENT */
+
+.rightContent{
+  width: 48%;
+ position: relative;
+ margin: 50px 0px 0px 100px;
+}
+.rightContent img:nth-child(1){
+ position: absolute;
+ top: -40px;
+ left: -40px;
+ z-index: 1;
+
+}
+.rightContent img:nth-child(2){
+ position: absolute;
+ z-index: 9;
+
+}
+.rightContent img:nth-child(3){
+ position: absolute;
+ top: 500px;
+ left: 400px;
+ z-index: 1;
+}
+
+

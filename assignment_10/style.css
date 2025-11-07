@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+section.headerSec {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wscubetech.co/Assignments/Assigment-10/images/spotlight-bg.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Create base stacking context */
+}
+
+.heading {
+  position: relative; /* Create new stacking context for child elements */
+}
+
+.heading img {
+  width: 18%;
+  position: absolute;  /* Make image float behind text */
+  top: 170px;
+  left: 68%;
+  transform: translateX(-50%);
+  z-index: 1; /* lower layer */
+}
+
+.heading h1 {
+  position: relative;  /* allows z-index to apply */
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 120px;
+  z-index: 2; /* higher layer */
+}
+
+.heading p {
+  position: relative;  /* allows z-index to apply */
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 2; /* higher layer */
+}
+
+nav{
+  display: flex;
+  margin: auto;
+  margin-top: 80px;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+nav ul li{
+  color:rgb(156, 178, 197);
+  font-size: 24px;
+  
+}
+nav ul li:nth-child(1){
+  color: #fff;
+  font-size: 54px;
+  margin-left: 60px;
+  font-weight: 700;
+}
+
+/* contentSec */
+
+.contentSec{
+  width: 1320px;
+  display: flex;
+  margin: 130px 100px;
+
+}
+
+/* left Content */
+
+.leftContent{
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.leftContent h1{
+  margin-bottom: 30px;
+}
+.leftContent p{
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 100px;
+ color: rgb(85, 84, 84);
+}
+.rightImage{
+ flex-grow: 1;
+}
+.questionDiv{
+  width: 90%;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 4px rgb(214, 212, 212);
+  padding: 15px 30px;
+
+}
+.questionDiv button{
+  border: none;
+  color: rgb(38, 153, 251);
+  background-color: #fff;
+}
+.questionDiv h6{
+margin-bottom: 15px;
+}
+.btndiv button{
+  padding: 10px 15px;
+  background:rgb(38, 153, 251);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/* right Content */
+
+.rightImage{
+  margin-left: 10px;
+  position: relative;
+}
+
+.rightImage img:nth-child(1){
+  width: 55%;
+  height: 76%;
+  margin-top: 85px;
+  position: absolute;
+  z-index: 9;
+}
+.rightImage img:nth-child(2){
+  position: absolute;
+  top: 6%;
+  left: -50px;
+  z-index: 1;
+}
+.rightImage img:nth-child(3){
+  position: absolute;
+ top: 490px;
+ left: 280px;
+ z-index: 1;
+}
