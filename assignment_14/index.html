@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Create a image gallery section using grid</title>
+     <style>
+          * {
+               margin: 0px;
+               padding: 0px;
+               font-family: Times New Roman;
+               box-sizing: border-box;
+               text-decoration: none;
+               list-style: none;
+          }
+
+          .gallery {
+               width: 100%;
+               padding: 30px 0px;
+               background: #f9f9f9;
+          }
+
+          .galleryMid {
+               width: 1320px;
+               margin: 50px auto;
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 30px;
+
+          }
+
+          .gallery h2 {
+               text-align: center;
+          }
+
+          .galleryItems {
+               border: 1px solid black;
+               border-radius: 15px;
+          }
+
+          .galleryItems img {
+               width: 100%;
+               border-radius: 15px;
+          }
+
+          .galleryItems p {
+               color: #000000;
+               padding: 10px;
+               line-height: 30px;
+               font-size: 16px;
+               text-align: center;
+          }
+
+          .galleryMid .galleryItems:nth-child(2) {
+               height: 75%;
+          }
+
+          .galleryMid .galleryItems:nth-child(5) {
+               margin-top: -135px;
+               height: 100%;
+          }
+
+          .galleryMid .galleryItems:nth-child(6) {
+               height: 75%;
+          }
+
+          @media (max-width: 575px) {
+                .gallery {
+               width: 100%;
+               padding: 20px 0px;
+          }
+          
+               .galleryMid {
+                    grid-template-columns: repeat(1, 1fr);
+               }
+
+               .galleryItems p {
+                    font-size: 24px;
+                    padding: 0px 15px;
+               }
+               .galleryItems img {
+                    padding: 0px 15px;
+               }
+
+               .galleryMid .galleryItems:nth-child(5) {
+                    margin-top: 0px;
+                    height: 100%;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <section class="gallery">
+          <h2>Project Gallery</h2>
+          <div class="galleryMid">
+               <div class="galleryItems">
+                    <img src="images/marcella-marcella-hn6CC9aosEk-unsplash.jpg" alt="">
+                    <p>Marcella Marcella - An intriguing portrait capturing the essence of a contemplative moment. The
+                         interplay of light and shadow creates a captivating atmosphere, drawing the viewer into the
+                         subject's introspective gaze</p>
+               </div>
+               <div class="galleryItems">
+                    <img src="images/hailey-wagner-4icV47LjYc4-unsplash.jpg" alt="">
+                    <p>Explore the tranquil beauty of nature captured in this breathtaking image. Let the serene
+                         landscapes and vibrant colors transport you to a world of peace and wonder.</p>
+               </div>
+               <div class="galleryItems">
+                    <img src="images/marcella-marcella-hn6CC9aosEk-unsplash.jpg" alt="">
+                    <p>Marcella Marcella - An intriguing portrait capturing the essence of a contemplative moment. The
+                         interplay of light and shadow creates a captivating atmosphere, drawing the viewer into the
+                         subject's introspective gaze</p>
+               </div>
+               <div class="galleryItems">
+                    <img src="images/marcella-marcella-hn6CC9aosEk-unsplash.jpg" alt="">
+                    <p>Marcella Marcella - An intriguing portrait capturing the essence of a contemplative moment. The
+                         interplay of light and shadow creates a captivating atmosphere, drawing the viewer into the
+                         subject's introspective gaze</p>
+               </div>
+               <div class="galleryItems">
+                    <img src="images/marcella-marcella-hn6CC9aosEk-unsplash.jpg" alt="">
+                    <p>Marcella Marcella - An intriguing portrait capturing the essence of a contemplative moment. The
+                         interplay of light and shadow creates a captivating atmosphere, drawing the viewer into the
+                         subject's introspective gaze</p>
+               </div>
+               <div class="galleryItems">
+                    <img src="images/hailey-wagner-4icV47LjYc4-unsplash.jpg" alt="">
+                    <p>Explore the tranquil beauty of nature captured in this breathtaking image. Let the serene
+                         landscapes and vibrant colors transport you to a world of peace and wonder.</p>
+               </div>
+          </div>
+     </section>
+</body>
+
+</html>

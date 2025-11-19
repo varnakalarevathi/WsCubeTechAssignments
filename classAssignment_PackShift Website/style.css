@@ -1,0 +1,611 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: "Lato", sans-serif;
+ list-style: none;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+header{
+ width: 100%;
+ background: #ffffff;
+ position: sticky;
+ top: 0px;
+ box-shadow: 0px 2px 10px 2px #cccccc;
+ z-index: 99;
+}
+.headerMid{
+ max-width: 1170px;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+figure img{
+ width: 100%;
+}
+.headerMid button{
+/* background:#ffcf40; */
+font-size: 22px;
+font-weight: 700;
+color: #ffffff;
+/* background-color:rgb(21, 94, 209); */
+border: none;
+padding: 7px 25px;
+border-radius: 30px 30px 0px 30px;
+cursor: pointer;
+background: linear-gradient(270deg, rgb(21, 94, 209), rgb(255, 207, 64));
+background-size: 800% 800%;
+animation: gradientShift 3s ease infinite;
+
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.mobilebtn{
+ display: none;
+
+}
+
+/* BANNER SECTION */
+.bannerSec{
+ width: 100%;
+ background-image: url("images/banner.jpg");
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+.bannerMid{
+max-width: 1170px;
+ margin: auto;
+ display: flex;
+ padding: 50px 0px;
+ justify-content: space-between;
+ align-items: center;
+ gap: 50px;
+
+
+}
+.bannerContent{
+ flex-basis: 60%;
+ margin-left: 90px;
+ 
+}
+.bannerContent h2, h3, h4{
+color: #fff;
+margin-bottom: 30px;
+}
+
+.bannerContent h2, h3{
+ text-transform: uppercase;
+}
+
+/* PACKING VIDEOS SECTION */
+.certifyDiv img{
+ margin-top: 20px;
+ width: 130px;
+}
+
+.bannerForm{
+ flex-basis: 35%;
+}
+.bannerForm form{
+ width: 330px;
+ background: #fff;
+ padding: 30px 20px;
+ border-radius: 15px;
+}
+.bannerForm form h3{
+ color: black;
+ text-align: center;
+}
+.formInputOuter input{
+width: 100%;
+margin-top: 10px;
+padding: 6px;
+}
+.captchaDiv{
+ width: 100%;
+ margin-top: 10px;
+ display: flex;
+ gap: 30px;
+ align-items: center;
+ justify-content: space-between;
+}
+.captchaDiv> input{
+ width: 45%;
+}
+.captaNumber{
+ width: 45%;
+ margin-top: 10px;
+ background: #e9b936;
+ padding: 6px;
+ text-align: center;
+}
+
+.formInputOuter p{
+ font-size: 11px;
+ margin-top: 10px;
+ line-height: 15px;
+}
+.formInputOuter p a{
+ font-size: 11px;
+ color: #155ed1;
+}
+.formInputOuter button{
+ width: 100%;
+ background: #155ed1;
+ padding: 6px;
+ margin-top: 10px;
+ color: #fff;
+ text-transform: uppercase;
+ font-size: 14px;
+ font-weight: 700;
+ border: none;
+}
+
+
+/* PACKING VIDEOS SECTION */
+
+.packingVideoSec{
+ width: 100%;
+ background: #fff;
+}
+.packingVideoSec h3{
+ text-align: center;
+ font-size: 30px;
+ color: rgb(3, 95, 174);
+ font-weight: 700;
+ padding: 30px 0px;
+ text-transform: uppercase;
+  
+}
+
+.packingVideoSec h3::after{
+ content:' Videos';
+ color: rgb(255, 207, 64);
+}
+.videosDiv{
+ max-width: 1170px;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.videosDiv iframe {
+ width:370px ;
+ height: 200px;
+ margin-bottom: 25px;
+ border-radius: 15px;
+}
+
+/* CORE SERVICES SECTION*/
+
+.coreServiceSec{
+ width: 100%;
+ height: auto;
+ background: rgb(244, 244, 244);
+}
+.coreServiceSec h3{
+text-align: center;
+font-size: 30px;
+ color: rgb(3, 95, 174);
+ font-weight: 700;
+ padding: 30px 0px;
+ text-transform: uppercase;
+
+}
+.coreServiceSec h3::after{
+
+ content: ' SERVICES';
+ color: rgb(255, 207, 64);
+}
+.coreServiceSecMain{
+ width: 1170px;
+ margin-top: 30px;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+gap: 10px;
+
+}
+.coreServiceItems{
+width: 49%;
+background: #fff;
+ margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+ 
+
+}
+.coreServiceItems img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.coreServiceContent h3{ 
+color: rgb(3, 95, 174);
+text-align: center;
+margin: 20px 0px 10px 0px;
+
+}
+.coreServiceContent p{ 
+color: #6c717B;
+margin: 0px 20px 0px 20px;
+line-height: 30px;
+}
+.coreServiceContentbtnDiv{
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.coreServiceContentbtnDiv button{
+background: rgb(255, 207, 64);
+border: none;
+padding: 8px 25px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 700;
+box-shadow: 0px 2px 12px 0px #ccc;
+}
+
+/* WHY PACKSHIFTS SECTION  */
+
+.whyPackshiftSec{
+ width: 100%;
+ background: #fff;
+ margin-bottom: 40px;
+}
+
+.whyPackshiftSec h3{ 
+color: rgb(3, 95, 174);
+text-align: center;
+font-size: 30px;
+margin: 20px 0px 10px 0px;
+text-transform: uppercase;
+
+}
+.whyPackshiftSec h3::after{
+ content: ' Packshifts';
+ color: rgb(255, 207, 64);
+}
+
+.whyPackshiftSec p{ 
+color: rgb(0, 0, 0);
+font-size: 16px;
+ font-weight: 700;
+text-align: center;
+margin: 20px 0px 20px 0px;
+}
+.whyPackshiftMid{
+ width: 1170px;
+ display: flex;
+ margin: auto;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ justify-content: center;
+ gap: 25px;
+}
+.whyPackshiftItems{
+ width: 22%;
+ background: rgb(244, 244, 244);
+ text-align: center;
+ padding: 10px 0px;
+ border-radius: 10px;
+}
+.whyPackshiftItems img{
+ width: 22%;
+}
+
+/* ACHIEVEMENT SECTION */
+
+.achievementSec{
+ width: 100%;
+background: #155ed1;
+}
+.achievementSec h3{
+ text-align: center;
+ font-size: 30px;
+ font-weight: 700;
+ padding: 30px 0px 0px 0px;
+ text-transform: uppercase;
+
+}
+.achievementSec p{
+ text-align: center;
+ color:#fff ;
+ font-weight: 500;
+}
+.achievementMain{
+ width: 1170px;
+ display: flex;
+ margin: auto;
+justify-content: space-between;
+ margin-top: 50px;
+ gap: 50px;
+}
+.achievementItems{
+ width: 16.5%;
+ margin-bottom: 50px;
+}
+.achievementItems img{
+   margin-left: 60px;
+}
+.achievementItems> h3{
+ font-size: 20px;
+ font-weight: 700;
+}
+.achievementItems> p{
+ font-size: 16px;
+ font-weight: 700;
+}
+
+/* HAPPY CUSTOMER SECTION */
+
+.happycustomerSec{
+width:100%;
+background: #fff;
+margin: 50px;
+
+}
+.happycustomerSec h3{
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(3, 95, 174);
+  text-align: center;
+  margin: 30px 0px;
+  text-transform: uppercase;
+
+}
+.happycustomerSec h3::after{
+    content: ' customers';
+    color: rgb(255, 207, 64);
+    font-weight: 700;
+}
+.customerDiv{
+  width: 1170px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.customerContent{
+  width: 800px;
+  height: 300px;
+  background: rgb(21, 94, 209);
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 0px 95px;
+  position: relative;
+  z-index: 1;
+}
+.customerContent p{
+  color: #fff;
+ line-height: 24px;
+}
+.customerImgDiv{
+  width: 150px;
+  height: 180px;
+  background: rgb(255, 207, 64);
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 2;
+}
+.customerImgDiv h6{
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* OUR CLIENTS */
+
+.ourClients{
+  width: 100%;
+  background: rgb(244, 244, 244);
+  padding-top: 30px;
+
+}
+.ourClients h3{
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 95, 174);
+   white-space: nowrap;
+  
+
+}
+.ourClients h3::after{
+  content: ' Clients';
+  color: rgb(255, 207, 64); 
+}
+.ourClientItems{
+  width: 1170px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+.ourClientItems img{
+  width: 100%;
+  border-radius: 20px;
+}
+.ourClientItems i{
+ margin-top: 50px;
+}
+
+/* ADDRESS SECTION */
+
+.addressSection{
+  width: 100%;
+  background: #fff;
+  margin: 50px 0px;
+  padding-right: 50px;
+  
+}
+.addressSection h3{
+  text-align: center;
+  color: rgb(3, 95, 174);
+  font-size: 30px;
+  text-transform: uppercase;
+  
+  
+}
+.addressSection h3::after{
+  content: ' Address';
+  color: rgb(255, 207, 64); 
+}
+.addressContent{
+  width: 800px;
+  height: 225px;
+  background: rgb(244, 244, 244);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* justify-content: center; */
+  align-items: center;
+}
+.addressContent figure i{
+font-size: 30px;
+color: rgb(255, 207, 64); 
+text-align: center;
+padding: 10px 0px;
+}
+.addresstextDiv h6{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+} 
+.addresstextDiv p{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 20px;
+}
+.addressBtnDiv{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.addressBtnDiv>button{
+background:#ffcf40;
+padding: 7px 25px;
+font-weight: 600;
+font-size: 25px;
+color: #fff;
+border: none;
+border-radius:25px 25px 0px 25px;
+cursor: pointer;
+background: linear-gradient(270deg, rgb(21, 94, 209), rgb(255, 207, 64));
+background-size: 800% 800%;
+animation: gradientShift 3s ease infinite;
+
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+  width: 100%;
+  background: rgb(21, 94, 209);
+  padding: 30px 0px;
+}
+
+.footerMid {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerSocialMedia{
+  cursor: pointer;
+}
+.footerTextDiv p{
+  font-size: 14px;
+  color: #fff;
+}
+.footerTextDiv p:hover{
+  color: rgb(255, 207, 64);
+  cursor: pointer;
+}
+.hrDiv hr{
+  width: 1170px;
+  display: flex;
+  margin: auto;
+}
+
+.companyRightsDiv{
+  width: 1170px;
+  display: flex;
+ justify-content: center;
+ text-align: center;
+ color: #fff;
+ font-size: 14px;
+ margin: 20px 0px 0px 100px;
+}
+
+/* TRUCK SECTION */
+
+
+.truckOuter{
+ position: fixed;
+  bottom: 0px;
+  left: 0px;
+  animation: truckMove 10s infinite linear;
+  /* animation-timing-function: linear; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-out; */
+  /* animation-timing-function: ease-in-out; */
+}
+
+.truckweels{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+.truckweels img{
+  animation: wheelRotate 1s 0s infinite linear;
+}
+
+@keyframes truckMove {
+  0%{
+      left: -300px;
+  }
+  100%{
+      left: 100%;
+  }
+}
+
+@keyframes wheelRotate{
+ 0%{
+      rotate: 0deg;
+  }
+  100%{
+      rotate: 360deg;
+  }
+}

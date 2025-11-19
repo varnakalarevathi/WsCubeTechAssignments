@@ -1,0 +1,467 @@
+
+/* ============================================
+   TABLET SCREEN 1024px
+============================================ */
+/* @media screen and (max-width: 1024px){
+
+  .headerMid,
+  .bannerMid,
+  .videosDiv,
+  .coreServiceSecMain,
+  .whyPackshiftMid,
+  .achievementMain,
+  .customerDiv {
+    width: 95%;
+  }
+
+  .bannerMid{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerContent{
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  .bannerForm{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .videosDiv iframe{
+    width: 47%;
+  }
+
+  .coreServiceItems{
+    width: 48%;
+  }
+
+  .whyPackshiftItems{
+    width: 30%;
+  }
+
+  .achievementItems{
+    width: 30%;
+  }
+
+  .customerContent{
+    width: 100%;
+    padding: 40px;
+  }
+
+  .customerImgDiv{
+    left: 20px;
+  }
+} */
+
+
+/* ============================================
+   MOBILE SCREEN 768px
+============================================ */
+
+/* @media only screen and (min-width:200px) and (max-width:768px) {
+          {
+
+  .headerMid button{
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+
+  .bannerMid{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerContent h2,
+  .bannerContent h3,
+  .bannerContent h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .videosDiv iframe{
+    width: 100%;
+    height: 200px;
+  }
+
+  .coreServiceItems{
+    width: 100%;
+  }
+
+  .whyPackshiftItems{
+    width: 45%;
+  }
+
+  .achievementItems{
+    width: 45%;
+    text-align: center;
+  }
+
+  .achievementItems img{
+    margin-left: 0;
+  }
+
+  .customerDiv{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .customerContent{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .customerImgDiv{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top: -50px;
+    left: 0;
+    margin: auto;
+  }
+
+  .ourClientItems img{
+    width: 25%;
+  }
+
+  .mobilebtn{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .mobilebtn button{
+    width: 48%;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+}
+} */
+
+/* ============================================
+  SMALL MOBILE SCREEN 480px
+============================================ */
+/* @media screen and (max-width: 480px){
+
+  .bannerContent h2{ font-size: 18px; }
+  .bannerContent h3{ font-size: 16px; }
+  .bannerContent h4{ font-size: 14px; }
+
+  .bannerForm form{
+    width: 100%;
+  }
+
+  .whyPackshiftItems{
+    width: 90%;
+  }
+
+  .achievementItems{
+    width: 90%;
+  }
+
+  .customerImgDiv{
+    width: 100px;
+    height: 130px;
+  }
+
+  .customerContent{
+    padding: 10px;
+  }
+
+  .ourClientItems img{
+    width: 45%;
+  }
+} */
+
+ @media only screen and (min-width:200px) and (max-width:768px){
+header{
+  justify-content: center;
+  align-items: center;
+ }
+  .headerMid{
+    width: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+ .headerMid button{
+  display: none;
+ }
+ .mobilebtn{
+  width: 36%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+.mobilebtn>button{
+ flex-grow: 1;
+ padding: 10px 0px;
+ margin-top: 50px;
+}
+.mobilebtn>button:nth-child(1){
+ background-color: #035fae;
+  border: none;
+ color: #fff;
+ font-size: 18px;
+ padding: 15px;
+}
+.mobilebtn>button:nth-child(2){
+ background-color: #ffcf40;
+  border: none;
+  color: #fff;
+ font-size: 18px;
+padding: 15px;
+}
+.bannerMid{
+ flex-direction: column;
+ padding:0px  20px;
+}
+.bannerContent{
+flex-basis: 100%;
+text-align: center;
+margin: 0px;
+}
+/* PACKING VIDEOS SECTION */
+.packingVideoSec h2{
+ font-size: 24px;
+}
+.certifyDiv img{
+ margin-top: 10px;
+ width: 90px;
+}
+.videosDiv{
+  justify-content:center;
+  padding: 0px 20px;
+}
+
+/* OUR CORE SERVICES SECTION  */
+.coreServiceSec h2{
+font-size: 24px;
+}
+.coreServiceSecMain{
+ display: flex;
+ flex-direction: column;
+ padding: 0px 30px;
+}
+.coreServiceItems{
+  align-items: center;
+  justify-content: center;
+}
+
+/* WHY PACKSHIFTS SECTION  */
+.whyPackshiftSec h3{ 
+font-size: 24px;
+
+}
+.whyPackshiftMid{
+ width: 585px;
+ gap: 15px;
+ justify-content: start;
+ margin-left: 30px;
+}
+.whyPackshiftItems{
+ width: 35%;
+ background: rgb(244, 244, 244);
+ text-align: center;
+ padding: 10px 0px;
+ border-radius: 10px;
+}
+.whyPackshiftItems img{
+ width: 30%;
+}
+/* ACHIEVEMENT SECTION */
+
+.achievementSec h3{
+ font-size: 24px;
+}
+.achievementSec p{
+ font-size: 20px;
+ font-weight: 600;
+}
+.achievementMain{
+ width: 390px;
+ justify-content:start;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.achievementItems{
+ width: 40%;
+ margin-bottom: 50px;
+}
+.achievementItems img{
+   margin-left: 80px;
+}
+.achievementItems> h3{
+ font-size: 20px;
+ font-weight: 700;
+}
+.achievementItems> p{
+ font-size: 16px;
+ font-weight: 700;
+}
+
+/* HAPPY CUSTOMER SECTION */
+
+.happycustomerSec h3{
+  font-size: 24px;
+  margin-bottom: 150px;
+}
+.customerDiv{
+  width: 585px;
+}
+
+.customerImgDiv{
+  width: 150px;
+  height: 180px;
+  background: rgb(255, 207, 64);
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  z-index: 2;
+}
+
+.customerDiv{
+  width: 585px;
+  margin: -20px 20px 0px 20px ;
+  /* margin-right: 20px;
+  margin-left: 20px; */
+}
+
+.customerImgDiv{
+  left: -60px;
+} 
+/* OUR CLIENTS */
+
+.ourClients h3{ 
+  font-size: 24px;
+}
+
+.ourClientItems{
+  width: 95%;
+background: rgb(244, 244, 244);
+}
+.ourClientItems img{
+  width: 35%;
+  border-radius: 20px;
+}
+.ourClientItems i{
+ margin-top: 40px;
+}
+.ourClientItems img:nth-child(3), img:nth-child(4), img:nth-child(5){
+display: none;
+}
+
+/* ADDRESS SECTION */
+
+.addressSection h3{ 
+  font-size: 24px;
+}
+
+.addressContent{
+  width: 100%;
+  height: 300px; 
+
+  align-items: center;
+  margin-left: 30px;
+}
+.addressContent figure i{
+font-size: 50px;
+color: rgb(255, 207, 64); 
+text-align: center;
+
+}
+.addresstextDiv h6{
+  font-size: 24px;
+
+} 
+.addresstextDiv p{
+  font-size: 18px;
+ 
+}
+.addressBtnDiv{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.addressBtnDiv>button{
+background:#ffcf40;
+padding: 7px 25px;
+font-weight: 600;
+font-size: 25px;
+color: #fff;
+border: none;
+border-radius:25px 25px 0px 25px;
+cursor: pointer;
+background: linear-gradient(270deg, rgb(21, 94, 209), rgb(255, 207, 64));
+background-size: 800% 800%;
+animation: gradientShift 3s ease infinite;
+
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+footer {
+  width: 585px;
+  background: rgb(21, 94, 209);
+  padding: 30px 0px;
+  margin-bottom: 50px;
+}
+.footerMid {
+  width: 585px;
+  padding-right: 50px;
+}
+
+.footerTextDiv p{
+  font-size: 12px;
+
+}
+
+.hrDiv hr{
+  width: 585px;
+ 
+}
+.companyRightsDiv{
+  width: 585px;
+ font-size: 12px;
+    padding-right: 180px;
+}
+
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
