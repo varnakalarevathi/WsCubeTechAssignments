@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Assignment_16-Website preloader Animation</title>
+ <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background: #fff;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    align-content: center; 
+
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background: gray;
+    margin: auto;
+    box-sizing: border-box;
+    border-bottom: gray;
+    animation: spin 2.5s 1s infinite linear;
+
+}
+hr{
+    width: 20%;
+    margin-left: 200px;
+}
+
+@keyframes spin{ 
+    0%{
+        transform: rotate(0deg);
+
+
+    }
+    12.5%{
+        transform: rotate(45deg);
+
+    }
+    25%{
+        transform: rotate(90deg);;
+
+    }
+    37.5%{
+        transform: rotate(135deg);
+
+    
+    }
+    50%{
+        transform: rotate(180deg);
+ 
+    }
+    62.5%{
+        transform: rotate(225deg);
+
+    }
+    75%{
+        transform: rotate(270deg);
+
+    }
+    87.5%{
+        transform: rotate(315deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <br>
+            <hr/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_16-Rotate Animation (Solar System)</title>
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #0b2229;
+
+}
+
+@keyframes rotatediv{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.main{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 100px auto;
+
+}
+.part1{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rotatediv 10s 0s infinite linear;
+}
+.part1disc{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 160px;
+    border-radius: 50%;
+    background: yellow;
+}
+.part2{
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rotatediv 5s 0s infinite linear;
+}
+.part2disc{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 150px;
+    border-radius: 50%;
+    background: orange;
+}
+    
+.part3{
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rotatediv 9s 0s infinite linear;
+}
+.part3disc{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 135px;
+    border-radius: 50%;
+    background: purple;
+}
+.part4{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rotatediv 6s 0s infinite linear;
+}
+.part4disc{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 95px;
+    border-radius: 50%;
+    background: blue;
+}
+.disc4dot{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    background: wheat;
+    animation: rotatediv 1s 0s infinite linear;
+}
+.part5{
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    border-radius: 50%;
+    border: 2px solid  white;
+    animation: rotatediv 7s 0s infinite linear;
+
+}
+.part5disc{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 80px;
+    border-radius: 50%;
+    background: gold;
+}
+.part6{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rotatediv 5s 0s infinite linear;
+
+}
+.part6disc{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 60px;
+    border-radius: 50%;
+    background: lightgreen;
+}
+.part7{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: yellow;
+
+}
+
+   </style>
+</head>
+<body>
+    <div class="main">
+        <div class="part1">
+            <div class="part1disc"></div>
+        </div>
+        <div class="part2">
+            <div class="part2disc"></div>
+        </div>
+        <div class="part3">
+            <div class="part3disc"></div>
+        </div>
+        <div class="part4">
+            <div class="part4disc">
+                <div class="disc4dot"></div>
+            </div>
+        </div>
+        <div class="part5">
+            <div class="part5disc"></div>
+        </div>
+        <div class="part6">
+            <div class="part6disc"></div>
+        </div>
+        <div class="part7">
+            <div class="part7disc"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
