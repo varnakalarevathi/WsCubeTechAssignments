@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Assignment_15_Image Flip Box</title>
+ <style>
+  *{
+   margin: 0px;
+   padding: 0px;
+   font-family: sans-serif;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+  }
+  .innerBox{
+   width: 300px;
+   height: 300px;
+   border: 1px solid red;
+   display: flex;
+   margin: auto;
+   position: relative;
+  }
+  .innerBox img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .innerBox1{
+   transform: scale(0) rotate(0);
+  }
+  .innerBox2{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+  }
+
+  .innerBox:hover .innerBox1{
+   transform: scale(1) rotateX(180deg);
+  }
+  .innerBox:hover .innerBox2{
+   transform: scale(0) rotateY(0deg);
+  }
+
+
+ </style>
+</head>
+
+<body>
+ <div class="innerBox">
+  <img class="innerBox1" src="images/1.jpg" alt="">
+  <img class="innerBox2" src="images/2.jpg" alt="">
+ </div>
+</body>
+
+</html>

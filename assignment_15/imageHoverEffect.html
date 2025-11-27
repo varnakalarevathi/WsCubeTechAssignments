@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Assignment_15_Image Hover Effect Demo</title>
+ <style>
+  *{
+   margin: 0px;
+   padding: 0px;
+   font-family: sans-serif;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+  }
+  .main{
+   width: 350px;
+   position: relative;
+   margin:auto;
+
+  }
+  .main img{
+   width: 100%;
+   height: auto;
+
+  }
+  .content{
+   width: 100%;
+   height: 100%;
+   padding: 20px 8px 0px 8px;
+   position: absolute;
+   top: -250px;
+   left: 0px;
+   box-sizing: border-box;
+   transition: all 0.5s;
+  }
+    .main:hover .content{
+     top: 0px;
+    }
+
+  .content p{
+  margin-bottom: 5px;
+  color:#ffffff;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.6;
+  }
+
+ </style>
+</head>
+<body>
+ <div class="main">
+  <img src="images/classroom-training.webp" alt="">
+  <div class="content">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+   <button>Read More</button>
+  </div>
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Asssignment_15_Product Card using Transform Scale</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: Times New Roman;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    /* HEADING */
+    .container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: 20px auto;
+      text-align: center;
+
+    }
+
+    .container h1 {
+      font-size: 28px;
+      color: #2e2e2d;
+      margin-bottom: 8px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      color: #2e2e2d;
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+    /* ----------  PRODUCT CARDS ---------- */
+
+    .container-mid {
+      max-width: 1170px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      /* EXACTLY TWO ROWS: each row gets equal fraction of the container height */
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+
+      /* FIX: define an explicit height for the whole grid.
+       Change 700px to any height you prefer (e.g. 600px or auto). */
+
+      /* height: 700px; */
+
+    }
+
+    .cardRow1-Left {
+      position: relative;
+      overflow: hidden;
+      background: #eee;
+      transition: filter 5s ease;
+    }
+
+
+
+    .cardRow1-Left img {
+      width: 100%;
+      height: 100%;
+      /* fill the grid cell */
+      /* display: block; */
+      object-fit: cover;
+      /* cover so image doesn't distort or force cell size */
+    }
+
+    .cardRow1-Left h2 {
+      position: absolute;
+      left: 20px;
+      bottom: 180px;
+      /* color: #fff; */
+      font-size: 28px;
+    }
+
+    .cardRow1-Left button {
+      padding: 8px 15px;
+      background: #ffffff;
+      border: 2px solid #b58423;
+       color: #ffffff;
+        cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      left: 20px;
+      bottom: 140px;   
+     transition: 0.3s;
+    }
+
+    /* TEXT stays above sliding panels */
+.cardRow1-Left button span {
+  position: relative;
+  z-index: 2;
+  color: white;                /* ✔ text initially WHITE */
+  transition: color 0.35s ease;
+}
+
+
+ /* sliding covers */
+.cardRow1-Left button::before,
+.cardRow1-Left button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #b58423;
+  z-index: 1;
+  transition: width 0.35s ease;
+}
+
+.cardRow1-Left button::before { left: 0; }
+.cardRow1-Left button::after { right: 0; }
+
+/* left panel */
+/* .cardRow1-Left button::before {
+  left: 0;
+  transform-origin: left;
+} */
+
+
+/* right panel */
+/* .cardRow1-Left button::after {
+  right: 0;
+  transform-origin: right;
+} */
+
+
+    /* CENTER IMAGE: must span rows 1 through 3 (1 / 3) — that equals 2 rows only */
+    .center-big {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      /* spans row 1 and row 2 */
+    }
+
+    /* small responsive tweak */
+    @media (max-width:875px) {
+      .container-mid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 220px);
+        height: auto;
+      }
+
+      .center-big {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      /* center becomes normal single cell on narrow screens */
+    }
+
+    /* ===== HOVER EFFECTS ===== */
+
+    .cardRow1-Left:hover::after, .cardRow1-Left:hover::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: rgba(0, 0, 0, 0.2);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      /* border-radius: 50%; */
+      animation: ripple1 1s forwards;
+    }
+
+
+    @keyframes ripple1 {
+
+      to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+      }
+    }
+
+
+
+    /* HOVER EFFECT ON BUTTON */
+
+/* Hover → panels open */
+.cardRow1-Left button:hover::before,
+.cardRow1-Left button:hover::after {
+  width: 0;
+}
+
+/* 1️⃣ Text color DURING slide = WHITE */
+.cardRow1-Left button:hover span {
+  color: white;
+}
+
+/* 2️⃣ Text color AFTER slide = GOLD */
+.cardRow1-Left button:hover span {
+  transition-delay: 0.1s;     /* Wait until slide finishes */
+  color: #b58423;              /* ✔ after slide */
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADING -->
+  <div class="container">
+    <h1>Celebration wear for Men</h1>
+    <img src="images/border.png" alt="">
+    <p>Welcome to Bagtesh Fashion Buy Indian Men's Ethnic suits, Tuxedos, Sherwanis, Nehru jacket, Jodhpurs pants,
+      Blazers, Shirts and much more.</p>
+  </div>
+
+  <!-- PRODUCT CARDS -->
+
+  <!-- IMPORTANT: exactly 5 items. center-big must be the 2nd item. -->
+  <div class="container-mid">
+
+    <!-- 1 → Row 1 Left -->
+    <div class="cardRow1-Left">
+      <img src="images/nehru-jacket-1.jpg" alt="image-1">
+      <h2>Nehru Jacket 1</h2>
+      <button><span>Shop Now</span></button>
+    </div>
+
+    <!-- 2 → CENTER BIG (spans 2 rows) -->
+    <div class="cardRow1-Left center-big">
+      <img src="images/selwarComeez.jpg" alt="image-2">
+      <h2>Big Center</h2>
+      <button><span>Shop Now</span></button>
+    </div>
+
+    <!-- 3 → Row 1 Right -->
+    <div class="cardRow1-Left">
+      <img src="images/mens-suit.jpg" alt="image-3">
+      <h2>Nehru Jacket 2</h2>
+      <button><span>Shop Now</span></button>
+    </div>
+
+    <!-- 4 → Row 2 Left -->
+    <div class="cardRow1-Left">
+      <img src="images/kurta-payjama.jpg" alt="image-4">
+      <h2>Nehru Jacket 3</h2>
+      <button><span>Shop Now</span></button>>
+    </div>
+
+    <!-- 5 → Row 2 Right -->
+    <div class="cardRow1-Left">
+      <img src="images/suit-demo.jpg" alt="image-5">
+      <h2>Nehru Jacket 4</h2>
+      <button><span>Shop Now</span></button>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
